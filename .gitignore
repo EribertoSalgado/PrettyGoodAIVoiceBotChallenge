@@ -1,0 +1,5 @@
+.env //keeps Twilio and GeminiAPI keys private
+.venv/ // local python environment
+__pycache__/ //Python cache files
+*.pyc // Python compiled files
+logs/ // log files

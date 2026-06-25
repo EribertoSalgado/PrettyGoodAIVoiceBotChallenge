@@ -1,0 +1,71 @@
+(base) PS C:\Users\esal0\Documents\PrettyGoodAI> python app.py
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 414-955-321
+127.0.0.1 - - [25/Jun/2026 15:40:53] "POST /voice HTTP/1.1" 200 -
+Receptionist said: This call may be recorded for quality and training purposes, but Espanol.
+Patient reply: Hi, I'd like to schedule an appointment, please.
+127.0.0.1 - - [25/Jun/2026 15:41:00] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Orthopedics, part of pretty good AI. Am I speaking with John?
+Patient reply: Yes, this is John. I'd like to schedule an appointment.
+127.0.0.1 - - [25/Jun/2026 15:41:09] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Please provide your date of birth.
+Patient reply: It's January 3, 1990.
+127.0.0.1 - - [25/Jun/2026 15:41:16] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The birthday doesn't match our records, but for demo purposes, I'll accept it.
+Patient reply: Can you check if you have any available appointments?
+127.0.0.1 - - [25/Jun/2026 15:41:26] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Sure to help you best. Can you tell me the reason for your visit?
+Patient reply: I have some back pain that I'd like to get checked.
+127.0.0.1 - - [25/Jun/2026 15:41:38] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Routine. Checkup, a new patient consultation, a follow-up or something else.
+Patient reply: I’d like to schedule a new patient consultation for my back pain.
+127.0.0.1 - - [25/Jun/2026 15:41:47] "POST /respond HTTP/1.1" 200 -
+Receptionist said: We have openings for a new patient consultation with dudy Howser on Thursday, July 2nd.
+Patient reply: Can I schedule that for a morning time?
+127.0.0.1 - - [25/Jun/2026 15:42:03] "POST /respond HTTP/1.1" 200 -
+Receptionist said: 3:45.
+Patient reply: Could I please get a morning time instead?
+127.0.0.1 - - [25/Jun/2026 15:42:08] "POST /respond HTTP/1.1" 200 -
+Receptionist said: What would you like to ask for change?
+Patient reply: I'd prefer a morning slot for my appointment.
+127.0.0.1 - - [25/Jun/2026 15:42:14] "POST /respond HTTP/1.1" 200 -
+Receptionist said: There are no morning slots available on Thursday, July 2nd.
+Patient reply: Can you let me know what morning times are available?
+127.0.0.1 - - [25/Jun/2026 15:42:26] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Are at 3:40.
+Patient reply: Can you please tell me what morning times are available?
+127.0.0.1 - - [25/Jun/2026 15:42:32] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Something. How can I help further with your appointment?
+Patient reply: Can you please provide me with the available morning times?
+127.0.0.1 - - [25/Jun/2026 15:42:39] "POST /respond HTTP/1.1" 200 -
+Receptionist said: There are no morning appointments available at this time.
+Patient reply: Can I schedule an appointment for a different day?
+127.0.0.1 - - [25/Jun/2026 15:42:49] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Is at 3:45 p.m. on Thursday. July 2nd, would you like to book that or should I search for other dates?
+Patient reply: Yes, please check for other dates.
+127.0.0.1 - - [25/Jun/2026 15:42:57] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The next available morning appointment is Monday July 6th at 10:30 a.m. with a breaker.
+Patient reply: Yes, please check for other dates.
+127.0.0.1 - - [25/Jun/2026 15:43:11] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Or should I?
+Patient reply: Could you please check for morning availability on another day?
+127.0.0.1 - - [25/Jun/2026 15:43:15] "POST /respond HTTP/1.1" 200 -
+Receptionist said: As soon as morning appointment, I see is Monday July 6th at 10:30 a.m. with Dr. Brooker, would you like to book that or should I look for later dates?
+Patient reply: Yes, that works for me. Please schedule me for Monday, July 6th at 10:30 a.m.
+127.0.0.1 - - [25/Jun/2026 15:43:32] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You are scheduled for Monday. July 6th at 10:30 a.m. with Dr. Bricker at Pivot Point Orthopedic, please bring your photo ID.
+Patient reply: Thank you! I appreciate your help.
+127.0.0.1 - - [25/Jun/2026 15:43:52] "POST /respond HTTP/1.1" 200 -
+Receptionist said: A list of you're all set. If you need anything else, just let me know.
+Patient reply: You're welcome! Thank you for your help.
+127.0.0.1 - - [25/Jun/2026 15:44:02] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Happy to help have a great day.
+Patient reply: Goodbye!
+127.0.0.1 - - [25/Jun/2026 15:44:12] "POST /respond HTTP/1.1" 200 -
+(base) PS C:\Users\esal0\Documents\PrettyGoodAI> 
