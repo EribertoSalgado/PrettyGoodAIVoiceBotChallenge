@@ -4,6 +4,7 @@ git remote add origin https://github.com/EribertoSalgado/PrettyGoodAIVoiceBotCha
 initialize a new git repo in the current directory.
     git init
     git remote -v
+    git push origin master:main
 
 COMMIT RULES & BEST PRACTICES:
 1. Write clear, descriptive commit messages
@@ -19,15 +20,15 @@ COMMIT RULES & BEST PRACTICES:
    - test: Adding or updating tests
    - chore: Build process, dependencies, or tooling changes
 
-4. Example commit:
+3. Example commit:
    feat: implement voice recognition module
    
    Add speech-to-text processing using Web Audio API.
    This enables users to interact with the bot via voice commands.
 
-5. Commit often with logical, atomic changes
-6. Always pull before pushing: git pull origin main
-7. Use branches for features: git checkout -b feature/your-feature-name
+4. Commit often with logical, atomic changes
+5. Always pull before pushing: git pull origin main
+6. Use branches for features: git checkout -b feature/your-feature-name
 
 HOW TO PUSH CODE:
 1. Stage your changes (if not already committed):
@@ -49,14 +50,15 @@ HOW TO PUSH CODE:
    git log --oneline -5               # View last 5 commits
    Check GitHub.com to see your commits appear
 
-FULL WORKFLOW EXAMPLE:
+FULL WORKFLOW EXAMPLE (if on master branch):
    git add .
    git commit -m "feat: add voice recognition"
    git pull origin main
-   git push origin main
+   git push origin master:main
 
-TROUBLESHOOTING:
-- "fatal: could not read Username": Use personal access token instead of password
-- "reject push...non-fast-forward": Someone pushed before you, run git pull first
-- "permission denied": Check GitHub credentials or SSH key setup
-- "branch does not exist": Create branch: git push -u origin branch-name
+BETTER WORKFLOW (switch to main branch first):
+   git checkout main
+   git pull origin main
+   git add .
+   git commit -m "feat: add voice recognition"
+   git push origin main
