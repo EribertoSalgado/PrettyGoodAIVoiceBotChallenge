@@ -1,0 +1,20 @@
+Natural Voice Interaction   
+    Very robotic tone and timing. Several Interuptions. 
+    Improvements to natural response required.
+
+Turn-Taking
+    Wait for the receptionist to finish speaking
+    Needs to handle pauses gracefully.
+
+Active Listening
+    Stuck in the loop asking for a morning appointment. 
+    Answer the receptionists questions directly.
+
+Audio quality
+    Minimize long silences
+    Avoid repeated phrases
+    Keep latency low
+
+Hi response to early
+Receptionist did not wait for my agent to finish their follow-up question when asked is this John?
+Needs improvements in abbreviated words like "I'd"

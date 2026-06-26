@@ -123,14 +123,14 @@ def voice():
         action="/respond",
         method="POST",
         speech_timeout="auto",
-        timeout=5
+        timeout=8,
+        language="en-US"
     )
 
-    gather.say(opening, voice="alice")
+    gather.say(opening, voice="Polly.Joanna")
     response.append(gather)
 
-    response.say("Goodbye.", voice="alice")
-    response.hangup()
+    response.redirect("/respond", method="POST")
 
     return str(response)
 
@@ -140,29 +140,44 @@ def respond():
     receptionist_message = request.form.get("SpeechResult", "")
     print("Receptionist said:", receptionist_message)
 
-    if not receptionist_message:
-        reply = "Sorry, I did not catch that. Could you repeat it?"
-    else:
-        reply = ask_llm(receptionist_message)
-
     response = VoiceResponse()
+
+    if receptionist_message:
+        lower = receptionist_message.lower()
+
+        if (
+            "you're all set" in lower
+            or "you are all set" in lower
+            or "have a great day" in lower
+            or "you are scheduled" in lower
+            or "appointment is scheduled" in lower
+        ):
+            response.pause(length=1)
+            response.say("Thank you. Goodbye.", voice="Polly.Joanna")
+            response.hangup()
+            return str(response)
+
+        reply = ask_llm(receptionist_message)
+    else:
+        reply = "Sorry, I did not catch that. Could you repeat it?"
+
+    response.pause(length=1)
 
     gather = Gather(
         input="speech",
         action="/respond",
         method="POST",
         speech_timeout="auto",
-        timeout=5
+        timeout=8,
+        language="en-US"
     )
 
-    gather.say(reply, voice="alice")
+    gather.say(reply, voice="Polly.Joanna")
     response.append(gather)
 
-    response.say("Thank you. Goodbye.", voice="alice")
-    response.hangup()
+    response.redirect("/respond", method="POST")
 
     return str(response)
-
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)

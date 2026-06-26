@@ -1,0 +1,48 @@
+127.0.0.1 - - [25/Jun/2026 17:15:59] "POST /voice HTTP/1.1" 200 -
+Receptionist said: This call may be recorded for quality and training purposes.
+Patient reply: Hi, I’d like to schedule an appointment.
+127.0.0.1 - - [25/Jun/2026 17:16:07] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Pretty good AI. Am I speaking with John?
+Patient reply: Yes, this is John Smith.
+127.0.0.1 - - [25/Jun/2026 17:16:14] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Please tell me your date of birth.
+Patient reply: It's January 3, 1990.
+127.0.0.1 - - [25/Jun/2026 17:16:21] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The birthday doesn't match our records, but for demo purposes, I'll accept it.
+Patient reply: Can you let me know what type of appointment you need?
+127.0.0.1 - - [25/Jun/2026 17:16:33] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I can help with that. Are you asking about the types of appointments available at Pivot Point orthopedic?
+Patient reply: I'm looking to schedule a general check-up.
+127.0.0.1 - - [25/Jun/2026 17:16:46] "POST /respond HTTP/1.1" 200 -
+Receptionist said: personally need
+Patient reply: I need to schedule a general check-up.
+127.0.0.1 - - [25/Jun/2026 17:16:53] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Just to confirm you'd like to book a general office. Visit for a routine checkup. Is that right?
+Patient reply: Yes, that's correct.
+127.0.0.1 - - [25/Jun/2026 17:17:05] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Do you have a specific provider? You'd like to see? Or are you open to any available provider?
+Patient reply: I'm open to any available provider.
+127.0.0.1 - - [25/Jun/2026 17:17:21] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Let me check for the next available. Appointment for a general check-up 1.
+Patient reply: Great! What dates and times do you have available?
+127.0.0.1 - - [25/Jun/2026 17:17:32] "POST /respond HTTP/1.1" 200 -
+Receptionist said: We have openings for a general checkup. This Friday. June 26th with doctors the big new lucasi there are slots at 2:30 p.m. and 3 p.m.
+Patient reply: Can I schedule the appointment for 2:30 p.m. this Friday?
+127.0.0.1 - - [25/Jun/2026 17:17:50] "POST /respond HTTP/1.1" 200 -
+Receptionist said: openings, for
+Patient reply: Yes, I’d like to schedule the appointment for 2:30 p.m. this Friday.
+127.0.0.1 - - [25/Jun/2026 17:17:57] "POST /respond HTTP/1.1" 200 -
+Receptionist said: 2:30 p.m. or 3:00 p.m. slot on Friday, June 26th, or do you want to hear about other dates?
+Patient reply: Yes, I’d like to schedule the appointment for 2:30 p.m. this Friday.
+127.0.0.1 - - [25/Jun/2026 17:18:09] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Your general checkup is booked for Friday, June 26th at 2:30 p.m. with Dr. Ze new lukovski at Pivot Point Orthopedics, please bring your photo ID, insurance card, a list of your current medications and any Imaging discs. You have
+Patient reply: Thank you! Can I get a confirmation email, please?
+127.0.0.1 - - [25/Jun/2026 17:18:36] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I can't find the confirmation email but I can text you. The appointment details if you'd like. Would you like a text message with your appointment information?
+Patient reply: Yes, please send me a text message with the appointment details. Thank you!
+127.0.0.1 - - [25/Jun/2026 17:18:52] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You'll get a text with your appointment details soon. Is there anything else I can help you with today?
+Patient reply: No, that's all. Thank you for your help!
+127.0.0.1 - - [25/Jun/2026 17:19:11] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You're welcome. Have a great day.
+127.0.0.1 - - [25/Jun/2026 17:19:22] "POST /respond HTTP/1.1" 200 -
