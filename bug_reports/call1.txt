@@ -1,3 +1,11 @@
+**MP3 Observations**
+
+Gather and response pause
+"Hi" response to early
+Receptionist did not wait for my agent to finish their follow-up question when asked is this John?
+
+**Improvements Suggestions**
+
 Natural Voice Interaction   
     Very robotic tone and timing. Several Interuptions. 
     Improvements to natural response required.
@@ -15,6 +23,4 @@ Audio quality
     Avoid repeated phrases
     Keep latency low
 
-Hi response to early
-Receptionist did not wait for my agent to finish their follow-up question when asked is this John?
 Needs improvements in abbreviated words like "I'd"

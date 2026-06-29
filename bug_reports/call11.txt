@@ -1,0 +1,8 @@
+**MP3 Observations**
+Agent greeting is faster at responding and successfully responded in a resonable time. 
+Corrected patient phone number. 
+Good timeout response. 
+Good end of call. 
+When verifying patient information, the receptionist responded 1 second too quick before patient response. Perhaps lower response time, it may be buggy but it is good to document its limts and create a graph with # of bugs vs. response time (sec). 
+**Improvement Suggestions**
+Timeout improvements when the receptionist is typing their information. 

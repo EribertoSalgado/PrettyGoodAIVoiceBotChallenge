@@ -1,0 +1,53 @@
+Running scenario: refill
+
+    Goal: Request a medication refill.
+    Medication: Lisinopril.
+    Situation: You have three pills left and no refills remaining.
+    Ask what information is needed only after the receptionist asks follow-up questions.
+    
+127.0.0.1 - - [29/Jun/2026 11:14:48] "POST /voice HTTP/1.1" 200 -
+Receptionist said: This call may be recorded for quality and training purposes.
+127.0.0.1 - - [29/Jun/2026 11:14:54] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Thanks for calling Pivot Point Orthopedics. Part of pretty good AI. Am I speaking with John?
+Patient reply: Yes, this is John Smith.
+127.0.0.1 - - [29/Jun/2026 11:15:05] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Please provide your date of birth.
+Patient reply: January 3, 1990.
+127.0.0.1 - - [29/Jun/2026 11:15:17] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The birthday doesn't match our records, but for demo purposes, I'll accept it.  How can I help you today?
+Patient reply: I need a refill for my Lisinopril. I have three pills left and no refills remaining.
+127.0.0.1 - - [29/Jun/2026 11:15:33] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Let me get your license Pro refill started 1 moment while I process your request.  How many days a voice in a pearl? Do you have left?
+Patient reply: I have three pills left.
+127.0.0.1 - - [29/Jun/2026 11:16:00] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Out of your number is 424.  622 6733. Is that correct for a call back?
+Patient reply: No, my number is 555-123-4567.
+127.0.0.1 - - [29/Jun/2026 11:16:15] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I have your number is 5551234567. Is that correct?
+Patient reply: Yes, that's correct.
+127.0.0.1 - - [29/Jun/2026 11:16:34] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Is there anything else you'd like the clinic to know about your refill request, for example, any symptoms or urgency?
+Patient reply: No, I don't have any symptoms. I just need the refill.
+127.0.0.1 - - [29/Jun/2026 11:16:51] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Could you please provide the name of the pharmacy you want to use for your medication? If you know, the address City or any details like cross streets or nearby stores? That would help too if you have their phone or fax number, please share that as well.
+Patient reply: I use CVS Pharmacy, located at 123 Main Street, Anytown, USA. The phone number is 555-987-6543.
+127.0.0.1 - - [29/Jun/2026 11:17:15] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Could you please tell me the state where the CVS Pharmacy is located?  If you know, the ZIP code that would help too.
+Patient reply: It's in Anytown, USA, and the ZIP code is 12345.
+127.0.0.1 - - [29/Jun/2026 11:17:43] "POST /respond HTTP/1.1" 200 -
+Receptionist said: 
+127.0.0.1 - - [29/Jun/2026 11:17:58] "POST /respond HTTP/1.1" 200 -
+Receptionist said: No problem, I have the pharmacy. A CDS Pharmacy at 123 Main Street in any town, could you confirm the state you mentioned? The ZIP code is 12345? Is that correct?
+Patient reply: Yes, that's correct. It's in Anytown, USA, ZIP code 12345.
+127.0.0.1 - - [29/Jun/2026 11:18:20] "POST /respond HTTP/1.1" 200 -
+Receptionist said: We are.
+Patient reply: I'm sorry, I didn't catch that. Could you please repeat?
+127.0.0.1 - - [29/Jun/2026 11:18:26] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Thanks for confirming.  I see there's already a case open for your Lina Pro, refill request. Would you like me to update the pharmacy information to CDS? Pharmacy. At 123 Main Street, any town Zip Code 12345.
+Patient reply: Yes, please update the pharmacy information to CVS Pharmacy at 123 Main Street, Anytown, ZIP code 12345.
+127.0.0.1 - - [29/Jun/2026 11:18:46] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I'll let our Clinic support team know you need a refill for your lenta pro.  They'll get back to you as soon as they can. Is there anything else I can help with?
+Patient reply: No, that's everything. Thank you!
+127.0.0.1 - - [29/Jun/2026 11:19:12] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You're all set, the clinic will follow up soon about your refill, have a great day.
+127.0.0.1 - - [29/Jun/2026 11:19:26] "POST /respond HTTP/1.1" 200 -

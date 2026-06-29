@@ -1,0 +1,10 @@
+**MP3 Observations**
+slow greeting response.
+Agent interupted my agent when introducing their name
+Successfuly corrected their phone number.
+Good timeout response. Perhaps can also say "Hello? Are you there?"
+Overall good call, agent is improving well. 
+
+**Improvement Suggestions**
+Define agents pharmacy and address. 
+Make greeting response faster.

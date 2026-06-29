@@ -1,0 +1,12 @@
+**MP3 Observations**
+1. First, the receptionist decided John already had a routine office visit for lower back pain. 
+
+    After that, your bot kept repeating the same goal: I’d like to schedule a new appointment for my lower back pain.
+
+2. The call ended when the receptionist said: You've reached the Pretty Good AI test line, goodbye. 
+    My bot did not recognize "goodbye" as an ending condition, so it tried to respond again.
+
+**Improvement Suggestions**
+Do not say Hello once we are connected. Wait for the receptionist to copmplete their speach.
+Bot must not interupt the receptionist. If asked to please wait, wait for the receptionist to greet you again.
+Adapt when the receptionist says an appointment already exists.

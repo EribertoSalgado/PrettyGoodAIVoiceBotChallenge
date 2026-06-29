@@ -1,0 +1,42 @@
+Running scenario: refill
+
+    Goal: Request a medication refill.
+    Medication: Lisinopril.
+    Situation: You have three pills left and no refills remaining.
+    Ask what information is needed.
+    
+127.0.0.1 - - [29/Jun/2026 10:28:53] "POST /voice HTTP/1.1" 200 -
+Receptionist said: This call may be recorded for quality and training purposes.
+127.0.0.1 - - [29/Jun/2026 10:28:59] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Thanks for calling Pivot Point Orthopedics. Part of pretty good. AI my sticky with John.
+Patient reply: Hi, this is John Smith. I need a refill for my Lisinopril. What information do you need from me?
+127.0.0.1 - - [29/Jun/2026 10:29:10] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Please provide your date of birth.
+Patient reply: My date of birth is January 3, 1990.
+127.0.0.1 - - [29/Jun/2026 10:29:22] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today?
+Patient reply: I need a refill for my Lisinopril. I have three pills left and no refills remaining.
+127.0.0.1 - - [29/Jun/2026 10:29:40] "POST /respond HTTP/1.1" 200 -
+Receptionist said: How many days of listener Pro? Do you have left? If you are already out, just let me know.
+Patient reply: I have three pills left.
+127.0.0.1 - - [29/Jun/2026 10:29:57] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I understand you have 3 pills left. What is the best phone number for a call? Back about your refill? I have your number as 424 622 6733. Is that correct?
+Patient reply: No, my correct phone number is 555-123-4567.
+127.0.0.1 - - [29/Jun/2026 10:30:20] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I have your number as 5551. 2 34567, is there anything else you want the care team to know about your refill request, for example, any symptoms or urgency?
+Patient reply: No, I don't have any symptoms or urgency. I just need the refill for my Lisinopril.
+127.0.0.1 - - [29/Jun/2026 10:30:46] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Could you please provide the name of the pharmacy you want to use for your medication? If you know, the address City or any details like cross streets or nearby landmarks, that would help too. If you have the pharmacy's phone or Fox number, please share that as well.
+Patient reply: I use Walgreens. The address is 123 Main Street, Anytown. Their phone number is 555-987-6543.
+127.0.0.1 - - [29/Jun/2026 10:31:18] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I have the address as 123 Main Street in any town and the phone number as 5598765433.  Could you tell me the state or zip code for this Walgreens location? That will help make sure we have the right Pharmacy.
+Patient reply: The state is California, and the zip code is 12345.
+127.0.0.1 - - [29/Jun/2026 10:31:54] "POST /respond HTTP/1.1" 200 -
+Receptionist said: 
+127.0.0.1 - - [29/Jun/2026 10:32:09] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I've documented your refill request from Lina Pro and sent it to our Clinic support team. They'll get back to you as soon as they can. Is there anything else I can help you with?
+Patient reply: No, that's all. Thank you for your help!
+127.0.0.1 - - [29/Jun/2026 10:32:30] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You're welcome. Have a great day.
+127.0.0.1 - - [29/Jun/2026 10:32:41] "POST /respond HTTP/1.1" 200 -
+(base) PS C:\Users\esal0\Documents\PrettyGoodAI> 

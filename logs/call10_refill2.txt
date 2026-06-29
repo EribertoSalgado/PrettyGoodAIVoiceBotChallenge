@@ -1,0 +1,59 @@
+Running scenario: refill
+
+    Goal: Request a medication refill.
+    Medication: Lisinopril.
+    Situation: You have three pills left and no refills remaining.
+    Ask what information is needed.
+    
+127.0.0.1 - - [29/Jun/2026 10:42:27] "POST /voice HTTP/1.1" 200 -
+Receptionist said: this call may be recorded for quality and training purposes, but  thanks for calling Pivot Point Orthopedics part of pretty good AI my speaking with John
+127.0.0.1 - - [29/Jun/2026 10:42:42] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Hello, this is Pivot Point Orthopedics. Am I speaking with John? How can I help you today?
+Patient reply: Yes, this is John Smith. I need to request a refill for my Lisinopril medication. I only have three pills left and no refills remaining. What information do you need from me?
+127.0.0.1 - - [29/Jun/2026 10:42:58] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Please provide your date of birth.
+Patient reply: My date of birth is January 3, 1990.
+127.0.0.1 - - [29/Jun/2026 10:43:09] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Thanks, John, the birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today?
+Patient reply: I need a refill for my Lisinopril medication. I only have three pills left and no refills remaining. What else do you need from me?
+127.0.0.1 - - [29/Jun/2026 10:43:28] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Thanks. John to confirm. You need a refill for listen app. Pearl. Is that correct?
+Patient reply: It's Lisinopril, not "listen app pearl." Yes, I need a refill for Lisinopril.
+127.0.0.1 - - [29/Jun/2026 10:43:48] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Got it. License a pro. How many days will your 3 pills? Last. Are you taking 1 pill each day?
+Patient reply: Yes, I'm taking 1 pill each day, so three pills will last me three days.
+127.0.0.1 - - [29/Jun/2026 10:44:08] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Thanks, John. I have you needing a refill for licenta Pro with 3 days left till I confirm your call back number as 424, 622 6733
+Patient reply: Actually, my callback number is 555-123-4567. Please let me know if you need anything else.
+127.0.0.1 - - [29/Jun/2026 10:44:30] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Could you please tell me the name of the pharmacy you want to use for your medication? If you know the address City or any details like cross streets or nearby stores? That would help too. If you have their phone or fax number, please share that as well.
+Patient reply: I use CVS Pharmacy at 123 Main Street, Anytown, USA. I don’t have their phone number on hand, but that’s the address.
+127.0.0.1 - - [29/Jun/2026 10:44:58] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Could you tell me which state CVS Pharmacy is in that? Will help make sure your Pharmacy is updated correctly. If you know the ZIP code that would help too.
+Patient reply: CVS Pharmacy is in New York, and the ZIP code is 12345.
+127.0.0.1 - - [29/Jun/2026 10:45:23] "POST /respond HTTP/1.1" 200 -
+Receptionist said: 
+127.0.0.1 - - [29/Jun/2026 10:45:38] "POST /respond HTTP/1.1" 200 -
+Receptionist said: We are processing your refill request for license, Pro 1 moment, while I document this for the clinic team.
+Patient reply: Thank you! Let me know if you need any more information.
+127.0.0.1 - - [29/Jun/2026 10:45:59] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Pro.
+Patient reply: I meant Lisinopril. Thank you for processing that!
+127.0.0.1 - - [29/Jun/2026 10:46:05] "POST /respond HTTP/1.1" 200 -
+Receptionist said: And contact.
+Patient reply: You can contact me at 555-123-4567.
+127.0.0.1 - - [29/Jun/2026 10:46:11] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Are you?
+Patient reply: Yes, I'm here. What do you need?
+127.0.0.1 - - [29/Jun/2026 10:46:17] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Is 55.
+Patient reply: I apologize, my phone number is 555-123-4567.
+127.0.0.1 - - [29/Jun/2026 10:46:23] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Listening.
+Patient reply: I'm here. What would you like to know?
+127.0.0.1 - - [29/Jun/2026 10:46:28] "POST /respond HTTP/1.1" 200 -
+Receptionist said: It sounds like you might.  Great John. Is there anything else you need help with today?
+Patient reply: No, that's everything for now. Thank you for your help!
+127.0.0.1 - - [29/Jun/2026 10:46:39] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You're all set John the clinic team will follow up about your licina pro refill as soon as possible have a great day.
+127.0.0.1 - - [29/Jun/2026 10:46:57] "POST /respond HTTP/1.1" 200 -

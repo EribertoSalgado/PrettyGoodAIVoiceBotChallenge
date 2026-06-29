@@ -1,0 +1,12 @@
+**MP3 Observations**
+Immediate "Hi"
+Interupted greeting.
+Bot says "Can you let me know what type of appointment you need?" We are the patient not them.
+Repeated Interuption.
+Asked for confirmation email.
+
+**Improvement Suggestions**
+Add a short delay before speaking so the bot does not interrupt the receptionist during greetings or longer responses.
+Improve the system prompt to ensure the bot always responds as the patient and avoids asking provider-side questions.
+Add better conversation state handling so the bot recognizes when the call is ending and avoids repeating requests or speaking after the receptionist says goodbye.
+Change the default robotic voice agent.

@@ -1,0 +1,37 @@
+Running scenario: cancel
+
+    Goal: Cancel an appointment scheduled for tomorrow.
+    Ask if there is a cancellation confirmation number.
+    
+127.0.0.1 - - [26/Jun/2026 12:24:25] "POST /voice HTTP/1.1" 200 -
+Receptionist said: May be recorded for quality and training purposes.
+Patient reply: That's fine. I’d like to cancel my appointment scheduled for tomorrow.
+127.0.0.1 - - [26/Jun/2026 12:24:32] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Good.  a, and I think it was John
+Patient reply: Yes, that's correct. It's John Smith.
+127.0.0.1 - - [26/Jun/2026 12:24:40] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Please provide your date of birth.
+Patient reply: Sure, it's January 3, 1990.
+127.0.0.1 - - [26/Jun/2026 12:24:51] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today?
+Patient reply: I’d like to cancel my appointment scheduled for tomorrow.
+127.0.0.1 - - [26/Jun/2026 12:25:07] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You have 3 upcoming appointments. The 1 schedule for tomorrow is with Dr. Z big. New lucosky. Is that the appointment you want to cancel?
+Patient reply: Yes, that's the one I want to cancel.
+127.0.0.1 - - [26/Jun/2026 12:25:29] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Can you share the reason for canceling your appointment with Dr. Zigu Lakosky tomorrow.
+Patient reply: I have a scheduling conflict and won’t be able to make it.
+127.0.0.1 - - [26/Jun/2026 12:25:47] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You'd like to cancel your appointment tomorrow with Dr. Zed big, new Lakosky. Okay, care of that. Now,
+Patient reply: Thank you! Will I receive a cancellation confirmation number?
+127.0.0.1 - - [26/Jun/2026 12:26:07] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Your appointment is cancelled, but we don't provide a cancellation confirmation number. If you need written proof or details, I can send a text message. Confirming the cancellation. Would you like that?
+Patient reply: Yes, please send me a text message confirming the cancellation. Thank you!
+127.0.0.1 - - [26/Jun/2026 12:26:29] "POST /respond HTTP/1.1" 200 -
+Receptionist said: 
+127.0.0.1 - - [26/Jun/2026 12:26:45] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I wasn't able.  No worries at all. Is there anything else I can help you with today?
+Patient reply: No, that's all for now. Thank you for your help!
+127.0.0.1 - - [26/Jun/2026 12:26:57] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You're welcome. Have a great day.
+127.0.0.1 - - [26/Jun/2026 12:27:08] "POST /respond HTTP/1.1" 200 -

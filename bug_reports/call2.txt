@@ -1,0 +1,8 @@
+**MP3 Observations**
+
+if the bot times out, it will abruptly end.
+
+**Improvements Suggestions**
+Slow down greeting
+Wait for receptionist to finish responses.
+Improve timeout. 

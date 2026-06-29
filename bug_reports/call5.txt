@@ -1,0 +1,7 @@
+**MP3 Observations**
+Greeted too fast and while the receptionist was talking.
+Bot needs to stop interupting the user.
+
+**Improvement Suggestions**
+Give a resoning for reschedule appointment.
+Stop interupting the user. 

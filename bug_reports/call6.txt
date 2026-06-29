@@ -1,0 +1,9 @@
+**MP3 Observations**
+Prevented speaking immediately when the call connects.
+Greeting interupted.
+Receptionist interupted my agent
+Agent interupts receptionist when given two options and responds early. 
+Interrupted receptionist while reading back information.
+
+**Improvement Suggestions**
+Improve turn taking. 

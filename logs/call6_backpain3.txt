@@ -1,0 +1,42 @@
+Running scenario: back_pain
+
+    Goal: Schedule an orthopedic appointment for lower back pain.
+    Preference: Morning appointment.
+    If the receptionist says an appointment already exists, ask to confirm or reschedule that appointment instead of requesting a duplicate appointment.
+    If offered a matching appointment, accept it.
+    
+127.0.0.1 - - [26/Jun/2026 12:10:20] "POST /voice HTTP/1.1" 200 -
+Receptionist said: may be recorded for quality and training purposes, but
+Patient reply: Hello, I’d like to schedule an orthopedic appointment for lower back pain. Do you have any morning slots available?
+127.0.0.1 - - [26/Jun/2026 12:10:27] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Part of pretty good. AI. I'm thinking with John.
+Patient reply: Hi, this is John Smith. I’d like to schedule an orthopedic appointment for lower back pain. Can you help me with that?
+127.0.0.1 - - [26/Jun/2026 12:10:36] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Please provide your date of birth.
+Patient reply: My date of birth is January 3, 1990.
+127.0.0.1 - - [26/Jun/2026 12:10:48] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today?
+Patient reply: I’d like to schedule an orthopedic appointment for lower back pain, preferably in the morning.
+127.0.0.1 - - [26/Jun/2026 12:11:02] "POST /respond HTTP/1.1" 200 -
+Receptionist said: It sounds like you need an appointment for lower back pain.
+Patient reply: Yes, that’s correct. Do you have any morning appointments available?
+127.0.0.1 - - [26/Jun/2026 12:11:17] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Or is it a routine concern?
+Patient reply: It’s not routine; I've been experiencing significant lower back pain. I’d like to get it checked out.
+127.0.0.1 - - [26/Jun/2026 12:11:25] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Would you say this is an urgent concern that needs prompt attention or can it wait a few days?
+Patient reply: It’s been bothering me quite a bit, so I’d prefer to get it checked as soon as possible.
+127.0.0.1 - - [26/Jun/2026 12:11:38] "POST /respond HTTP/1.1" 200 -
+Receptionist said: For you to lower back. Pain is bothering you and not routine. Would you like to book an urgent? Visit to address it as soon as possible?
+Patient reply: Yes, I would like to book an urgent visit to address the lower back pain as soon as possible.
+127.0.0.1 - - [26/Jun/2026 12:11:50] "POST /respond HTTP/1.1" 200 -
+Receptionist said: 
+127.0.0.1 - - [26/Jun/2026 12:12:04] "POST /respond HTTP/1.1" 200 -
+Receptionist said: No problem. I found openings for Urgent. Visit for your lower back. Pains the earliest morning slot is Monday, June 29th at 8:30 a.m. with Dr. Ziggy lucasi.
+Patient reply: That works for me! I'll take the appointment on Monday, June 29th at 8:30 a.m. with Dr. Ziggy Lucasi.
+127.0.0.1 - - [26/Jun/2026 12:12:24] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Your appointment is set for Monday. June 29th, at 8:30 a.m. with Dr. Z big, new lucasi at Pivot Point Orthopedics.
+Patient reply: Thank you for confirming the appointment! I appreciate your help.
+127.0.0.1 - - [26/Jun/2026 12:12:46] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Card, you're all set for your appointment if you need anything else, just let me know.
+127.0.0.1 - - [26/Jun/2026 12:12:57] "POST /respond HTTP/1.1" 200 -

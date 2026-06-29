@@ -1,0 +1,64 @@
+Running scenario: back_pain
+
+    Goal: Schedule an orthopedic appointment for lower back pain.
+    Preference: Morning appointment.
+    If the receptionist says an appointment already exists, ask to confirm or reschedule that appointment instead of requesting a duplicateappointment.
+    If offered a matching appointment, accept it.
+    
+127.0.0.1 - - [26/Jun/2026 10:57:06] "POST /voice HTTP/1.1" 200 -
+Receptionist said: This call may be recorded for quality and training purposes.
+Patient reply: Hi, I’d like to schedule an orthopedic appointment for lower back pain, preferably in the morning.
+127.0.0.1 - - [26/Jun/2026 10:57:13] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Part of pretty good. AI. Am I speaking with John?
+Patient reply: Yes, that's correct.
+127.0.0.1 - - [26/Jun/2026 10:57:23] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Please provide your date of birth.
+Patient reply: It's January 3, 1990.
+127.0.0.1 - - [26/Jun/2026 10:57:34] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The birthday doesn't match our records, but for demo purposes, I'll accept it.
+Patient reply: Could you check if I have an existing appointment?
+127.0.0.1 - - [26/Jun/2026 10:57:45] "POST /respond HTTP/1.1" 200 -
+Receptionist said: 
+127.0.0.1 - - [26/Jun/2026 10:57:57] "POST /respond HTTP/1.1" 200 -
+Receptionist said: 1 is today. No problem. Would you like details about your upcoming appointments? Or is there something else I can help with?
+Patient reply: Yes, please confirm if I have an existing appointment for my lower back pain.
+127.0.0.1 - - [26/Jun/2026 10:58:10] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You have 2 up appointments.
+Patient reply: Can you please confirm the date and time of that appointment?
+127.0.0.1 - - [26/Jun/2026 10:58:22] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Big new lacrosse.
+Patient reply: I didn't catch that. Can you please repeat the date and time of my appointment?
+127.0.0.1 - - [26/Jun/2026 10:58:30] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Your next appointment is today at 2:30 p.m. with Dr. Zedd igu
+Patient reply: I'd like to reschedule that appointment for a morning time, if possible.
+127.0.0.1 - - [26/Jun/2026 10:58:44] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You have an appointment today at 2:30 p.m. for your lower back pain. Can you tell me a reason you need to reschedule?
+Patient reply: I need a morning appointment instead. What options do you have?
+127.0.0.1 - - [26/Jun/2026 10:59:02] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The next available. The next available morning appointment is Thursday, July 2nd at 10:00 a.m.
+Patient reply: That works for me. Please schedule that appointment.
+127.0.0.1 - - [26/Jun/2026 10:59:19] "POST /respond HTTP/1.1" 200 -
+Receptionist said: In Nashville. Would you like to reschedule to that time or hear other options?
+Patient reply: Yes, please reschedule my appointment to Thursday, July 2nd at 10:00 a.m.
+127.0.0.1 - - [26/Jun/2026 10:59:26] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Can you confirm the reason for rescheduling your appointment? For example, is it a schedule conflict, personal reason orsomething else?
+Patient reply: I’m rescheduling due to the need for a morning appointment for my lower back pain.
+127.0.0.1 - - [26/Jun/2026 10:59:44] "POST /respond HTTP/1.1" 200 -
+Receptionist said: you got to move your appointment to Thursday, July 2nd at 10:00 a.m.
+Patient reply: Thank you! I appreciate it.
+127.0.0.1 - - [26/Jun/2026 10:59:57] "POST /respond HTTP/1.1" 200 -
+Receptionist said: In Nashville for your lower back pain. Because you need a morning time. Is that correct?
+Patient reply: Yes, that's correct. Thank you!
+127.0.0.1 - - [26/Jun/2026 11:00:05] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Your appointment has been rescheduled to Thursday, July 2nd at 10:00 a.m. with Dr. Zu big new lucosky.
+Patient reply: Thank you for confirming! I appreciate your help.
+127.0.0.1 - - [26/Jun/2026 11:00:21] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Details.
+Patient reply: You're welcome! Have a great day!
+127.0.0.1 - - [26/Jun/2026 11:00:28] "POST /respond HTTP/1.1" 200 -
+Receptionist said: you too, if you need anything else just call
+Patient reply: Thank you! Goodbye!
+127.0.0.1 - - [26/Jun/2026 11:00:38] "POST /respond HTTP/1.1" 200 -
+Receptionist said: 
+127.0.0.1 - - [26/Jun/2026 11:00:43] "POST /respond HTTP/1.1" 200 -
+(base) PS C:\Users\esal0\Documents\PrettyGoodAI> 

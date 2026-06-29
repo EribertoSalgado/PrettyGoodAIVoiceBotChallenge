@@ -1,0 +1,44 @@
+Running scenario: office_hours
+
+    Goal: Ask about office hours.
+    Then ask whether weekend appointments are available.
+    
+127.0.0.1 - - [26/Jun/2026 12:36:42] "POST /voice HTTP/1.1" 200 -
+Receptionist said: This call may be recorded for quality and training purposes.  Thanks for calling Pivot Point Orthopedics. Part of pretty good AI. Am I speaking with John?
+127.0.0.1 - - [26/Jun/2026 12:36:57] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Hello, this is Pivot Point Orthopedics. Am I speaking with John? How can I help you today?
+Patient reply: Hi, yes, this is John. I wanted to ask what your office hours are.
+127.0.0.1 - - [26/Jun/2026 12:37:13] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Please provide your date of birth.
+Patient reply: Sure, it's January 3, 1990.
+127.0.0.1 - - [26/Jun/2026 12:37:25] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The birth date, doesn't matter records. But for demo purposes, I'll accept it. How can I help you today?
+Patient reply: I’d like to know your office hours, please.
+127.0.0.1 - - [26/Jun/2026 12:37:41] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Our clinic is open Monday Tuesday and Thursday from 9:00 a.m. to 4:00 p.m. Wednesday from 12:00 p.m. to 7:00 p.m. and Friday. From 9:00 a.m. to 12:00 p.m. Is there anything else you'd like to know?
+Patient reply: Thanks for that information! Do you have weekend appointments available?
+127.0.0.1 - - [26/Jun/2026 12:38:01] "POST /respond HTTP/1.1" 200 -
+Receptionist said: We do not have weekend appointments. Our clinic is open Monday through Friday. Only would you like to schedule a visit during the week?
+Patient reply: I appreciate the info. Yes, I’d like to schedule an appointment during the week.
+127.0.0.1 - - [26/Jun/2026 12:38:20] "POST /respond HTTP/1.1" 200 -
+Receptionist said: What type of appointment do you need? For example, is this a routine visit a follow-up? Something urgent or a new patient consultation?
+Patient reply: It's a new patient consultation.
+127.0.0.1 - - [26/Jun/2026 12:38:42] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Do you have a preferred provider? Or would you like to see the first available?
+Patient reply: I don’t have a preferred provider; I’d like to see the first available.
+127.0.0.1 - - [26/Jun/2026 12:38:56] "POST /respond HTTP/1.1" 200 -
+Receptionist said: It looks like you already have a new patient consultation appointment booked. If you want to reschedule or cancel it, I can help with that. Would you like to make a change to your existing appointment?
+Patient reply: I wasn't aware I had an appointment booked. Can you tell me when it is?
+127.0.0.1 - - [26/Jun/2026 12:39:22] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You already have a new patient consultation appointment on file. Would you like details about that appointment or do you want to reschedule or cancel it?
+Patient reply: I’d like to hear the details of that appointment, please.
+127.0.0.1 - - [26/Jun/2026 12:39:40] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I don't have access to the exact appointment details but I can connect you with our Live support team, they can provide the full information about your scheduled appointment. Would you like me to transfer you now?
+Patient reply: Yes, please transfer me to the Live support team. Thank you!
+127.0.0.1 - - [26/Jun/2026 12:40:00] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I can connect you to our patient support team. However, I'm a pretty good Ai and can do many of the things in operator can do you want to give me a try?
+Patient reply: I appreciate that, but I would prefer to speak with the patient support team for my appointment details.
+127.0.0.1 - - [26/Jun/2026 12:40:23] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Connecting you to a representative, please wait.  Hello, you've reached the pretty good. AI test line, goodbye.
+127.0.0.1 - - [26/Jun/2026 12:40:43] "POST /respond HTTP/1.1" 200 -
+(base) PS C:\Users\esal0\Documents\PrettyGoodAI> 

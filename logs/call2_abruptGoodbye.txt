@@ -1,0 +1,25 @@
+127.0.0.1 - - [25/Jun/2026 17:04:01] "POST /voice HTTP/1.1" 200 -
+Receptionist said: This call may be recorded for quality and training purposes.
+Patient reply: Hi, I’d like to schedule an appointment, please.
+127.0.0.1 - - [25/Jun/2026 17:04:09] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Am I speaking with John?
+Patient reply: Yes, that's me.
+127.0.0.1 - - [25/Jun/2026 17:04:17] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Please provide your date of birth.
+Patient reply: It's January 3, 1990.
+127.0.0.1 - - [25/Jun/2026 17:04:25] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today?
+Patient reply: I’d like to schedule a general check-up, please.
+127.0.0.1 - - [25/Jun/2026 17:04:39] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Just to confirm you'd like to book a general office visit for a routine checkup.
+Patient reply: Yes, that's correct.
+127.0.0.1 - - [25/Jun/2026 17:04:51] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Do you have a specific provider? You'd like to see? Or are you open to any available provider?
+Patient reply: I'm open to any available provider.
+127.0.0.1 - - [25/Jun/2026 17:05:06] "POST /respond HTTP/1.1" 200 -
+Receptionist said: We have openings this week in early next week. Do you have a preferred day or time of day for your appointment?
+Patient reply: I’m available on Wednesday or Thursday, preferably in the morning.
+127.0.0.1 - - [25/Jun/2026 17:05:22] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I found morning appointments, with 2 providers on Wednesday, July 1st and Thursday. July 2nd, would you like to hear options for 1 of those days?
+Patient reply: Yes, please. Let's hear the options for Wednesday.
+127.0.0.1 - - [25/Jun/2026 17:05:44] "POST /respond HTTP/1.1" 200 -

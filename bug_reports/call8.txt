@@ -1,0 +1,15 @@
+**MP3 Observations**
+Long wait response for introduction. Receptionist asked twice if this is John.
+Good follow-up about consultation appointment details.
+Handled agent transfer well.
+Longest Call so far of 4:03 min
+Converstion followed through well.
+Good end of call.
+Receptionist was persistent about suporting the patient, but did not have the information we required. Patient previously stated to transfer to the support team.
+    Receptionist said: I don't have access to the exact appointment details but I can connect you with our Live support team, they can provide the full information about your scheduled appointment. Would you like me to transfer you now?
+    Patient reply: Yes, please transfer me to the Live support team. Thank you!
+    Receptionist said: I can connect you to our patient support team. However, I'm a pretty good Ai and can do many of the things in operator can do you want to give me a try?
+    Patient reply: I appreciate that, but I would prefer to speak with the patient support team for my appointment details.
+
+**Improvement Suggestions**
+Lower wait time.
