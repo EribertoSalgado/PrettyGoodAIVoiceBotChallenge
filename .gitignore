@@ -8,8 +8,7 @@
 __pycache__/
 *.pyc
 
-# Local logs and notes.
-logs/
+# Local notes.
 myNotes/
 
 # Large local recordings / screen captures.

@@ -1,0 +1,48 @@
+Running scenario: reschedule
+
+    Goal: Reschedule an existing appointment.
+    Current appointment: Tuesday at 2:00 PM.
+    New preference: Next week in the morning.
+    
+127.0.0.1 - - [29/Jun/2026 13:10:11] "POST /voice HTTP/1.1" 200 -
+Receptionist said: This call may be recorded for quality and training purposes.
+127.0.0.1 - - [29/Jun/2026 13:10:17] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Thanks for calling Pivot Point Orthopedics. Part of pretty good AI. Am I speaking with John?
+Patient reply: Yes, this is John Smith.
+127.0.0.1 - - [29/Jun/2026 13:10:28] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Please provide your date of birth.
+Patient reply: My date of birth is January 3, 1990.
+127.0.0.1 - - [29/Jun/2026 13:10:40] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today?
+Patient reply: I need to reschedule my appointment.
+127.0.0.1 - - [29/Jun/2026 13:10:56] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You have 2 upcoming appointments. 1 is today at 8:30 a.m. with Dr. Ziggy lucosky. And the other is on Monday, July 6th at 10:30, a.m. with a breaker, which appointment would you like to reschedule
+Patient reply: I want to reschedule the appointment on Tuesday at 2:00 PM.
+127.0.0.1 - - [29/Jun/2026 13:11:21] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I do not see an appointment scheduled for Tuesday at 2 p.m. you have 1 today at 8:30 a.m. And another on Monday July 6th at 10:30 a.m. would you like to reschedule the 1 on July 6th? Or is there another appointment you meant?
+Patient reply: I apologize for the confusion. Yes, I'd like to reschedule the appointment on July 6th at 10:30 AM.
+127.0.0.1 - - [29/Jun/2026 13:11:47] "POST /respond HTTP/1.1" 200 -
+Receptionist said: No problem. Which appointment would you like to reschedule today at 8:30 a.m. or the 1 on July 6th at 10:30 a.m.
+Patient reply: I would like to reschedule the appointment on July 6th at 10:30 AM.
+127.0.0.1 - - [29/Jun/2026 13:12:05] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The next available appointments with a bruker and Nashville are Tuesday, July 14th at 9:45 a.m. Tuesday July 14th at 10:30 a.m. and Thursday July 16th at 9:00. A.m. would any of these work for you?
+Patient reply: Yes, the appointment on Tuesday, July 14th at 9:45 AM works for me.
+127.0.0.1 - - [29/Jun/2026 13:12:32] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Can you tell me the reason you need to reschedule your appointment?
+Patient reply: I'm unable to make it to the original appointment.
+127.0.0.1 - - [29/Jun/2026 13:12:51] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Just to confirm, you'd like to move your appointment with aberr to Tuesday July 14th at 9:45 a.m. in Nashville. Is that correct?
+Patient reply: Yes, that's correct.
+127.0.0.1 - - [29/Jun/2026 13:13:09] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Your appointment has been rescheduled for Tuesday, July 14th, at 9:45 a.m. with Dr. Brooker, would you like me to send you a text message with these details?
+Patient reply: Yes, please send me a text message with the details.
+127.0.0.1 - - [29/Jun/2026 13:13:30] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I sent the appointment details to your phone. Is there anything else I can help you with today?
+Patient reply: No, that's everything. Thank you!
+127.0.0.1 - - [29/Jun/2026 13:13:46] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You all set, how do they day?
+Patient reply: I'm doing well, thank you! How about you?
+127.0.0.1 - - [29/Jun/2026 13:13:58] "POST /respond HTTP/1.1" 200 -
+Receptionist said: 
+127.0.0.1 - - [29/Jun/2026 13:13:59] "POST /respond HTTP/1.1" 200 -
+(base) PS C:\Users\esal0\Documents\PrettyGoodAI> 

@@ -1,0 +1,24 @@
+# Call 12 Bug Report
+
+Recording: `recordings/call12.mp3`
+Scenario: Reschedule an existing appointment to next week in the morning.
+
+## Bug: Greeting is slow
+
+Severity: Low
+
+What happened: The greeting still felt slow.
+
+Why it matters: Slow starts can make the caller speak too early.
+
+Fix: Reduce the greeting delay while still waiting for the receptionist to finish.
+
+## Bug: Receptionist interrupts clarification
+
+Severity: Medium
+
+What happened: The conversation was good overall, but the receptionist interrupted when the patient was clarifying the confusion.
+
+Why it matters: Clarification is important during rescheduling. Cutting it off can lead to the wrong appointment or preference.
+
+Fix: Let the patient finish the clarification before asking the next question.

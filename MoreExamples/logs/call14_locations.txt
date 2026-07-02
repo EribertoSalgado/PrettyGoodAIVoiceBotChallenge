@@ -1,0 +1,35 @@
+Running scenario: locations
+
+    Goal: Schedule a routine general checkup.
+    Preference: Wednesday or Thursday morning.
+    If offered a matching appointment, accept it clearly.
+    
+127.0.0.1 - - [29/Jun/2026 14:14:50] "POST /voice HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\esal0\\Documents\\PrettyGoodAI\\test_call.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 414-955-321
+Receptionist said: This call may be recorded for quality and training purposes.  Thanks for calling Pivot Point Orthopedics. Part of pretty good AI. Am I speaking with John?
+127.0.0.1 - - [29/Jun/2026 14:15:05] "POST /respond HTTP/1.1" 200 -
+Receptionist said: 
+127.0.0.1 - - [29/Jun/2026 14:15:11] "POST /respond HTTP/1.1" 200 -
+Receptionist said: To the point Orthopedics.  No problem at all. How can I help you today?
+Patient reply: Hi, I'd like to schedule a routine general checkup, please.
+127.0.0.1 - - [29/Jun/2026 14:15:24] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Can you please provide your full name and date of birth?
+Patient reply: Yes, this is John Smith. My date of birth is January 3, 1990.
+127.0.0.1 - - [29/Jun/2026 14:15:38] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Just to confirm, I have your name as John Smith and your date of birth is January. 3rd 1990. Is that correct? If so, could you please spell your first? And last name for me,
+Patient reply: Yes, that's correct. My first name is spelled J-O-H-N and my last name is S-M-I-T-H.
+127.0.0.1 - - [29/Jun/2026 14:16:03] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Would you like to use your phone number to look up your record if so, please provide the number you have on file with us if you're not sure, just let me know.
+Patient reply: Sure, my phone number is 555-123-4567.
+127.0.0.1 - - [29/Jun/2026 14:16:30] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I have your phone number is 5551234567 and your date of birth as January 3rd 1990. Is that correct?
+Patient reply: Yes, that's correct.
+127.0.0.1 - - [29/Jun/2026 14:16:55] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I can't proceed further right now but I can make sure our Clinic support team follows up with you. Please hold while I connect you to our patient support team.  Connecting you to a representative, please wait.
+Patient reply: Okay, thank you.
+127.0.0.1 - - [29/Jun/2026 14:17:17] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Goodbye.
+127.0.0.1 - - [29/Jun/2026 14:17:22] "POST /respond HTTP/1.1" 200 -

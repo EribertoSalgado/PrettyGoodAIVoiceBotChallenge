@@ -1,8 +1,24 @@
-**MP3 Observations**
-Agent greeting is faster at responding and successfully responded in a resonable time. 
-Corrected patient phone number. 
-Good timeout response. 
-Good end of call. 
-When verifying patient information, the receptionist responded 1 second too quick before patient response. Perhaps lower response time, it may be buggy but it is good to document its limts and create a graph with # of bugs vs. response time (sec). 
-**Improvement Suggestions**
-Timeout improvements when the receptionist is typing their information. 
+# Call 11 Bug Report
+
+Recording: `recordings/call11.mp3`
+Scenario: Request a medication refill.
+
+## Bug: Receptionist answers a little too fast during verification
+
+Severity: Low
+
+What happened: While verifying patient information, the receptionist responded about one second too early, before the patient response felt fully done.
+
+Why it matters: It makes the verification section feel clipped.
+
+Fix: Add a little more wait time after the patient finishes speaking.
+
+## What worked well
+
+Severity: Informational
+
+What happened: Greeting speed improved. Phone number correction was good. Timeout response was good. The call also ended well.
+
+Why it matters: This call shows the direction is right.
+
+Keep: The improved greeting, correction, timeout, and closing behavior.

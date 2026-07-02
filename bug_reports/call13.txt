@@ -1,0 +1,24 @@
+# Call 13 Bug Report
+
+Recording: `recordings/call13.mp3`
+Scenario: Ask whether Blue Cross Blue Shield is accepted, then schedule a routine appointment.
+
+## Bug: Initial greeting is still delayed
+
+Severity: Low
+
+What happened: The initial greeting still had delay. The rest of the conversation was good.
+
+Why it matters: The delay makes the beginning feel less natural.
+
+Fix: Reduce the greeting delay, but keep the rest of this flow.
+
+## What worked well
+
+Severity: Informational
+
+What happened: The overall conversation was good.
+
+Why it matters: This was a solid example of the patient moving from an insurance question into scheduling.
+
+Keep: The conversation structure.

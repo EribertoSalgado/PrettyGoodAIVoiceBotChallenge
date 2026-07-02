@@ -1,15 +1,24 @@
-**MP3 Observations**
-Long wait response for introduction. Receptionist asked twice if this is John.
-Good follow-up about consultation appointment details.
-Handled agent transfer well.
-Longest Call so far of 4:03 min
-Converstion followed through well.
-Good end of call.
-Receptionist was persistent about suporting the patient, but did not have the information we required. Patient previously stated to transfer to the support team.
-    Receptionist said: I don't have access to the exact appointment details but I can connect you with our Live support team, they can provide the full information about your scheduled appointment. Would you like me to transfer you now?
-    Patient reply: Yes, please transfer me to the Live support team. Thank you!
-    Receptionist said: I can connect you to our patient support team. However, I'm a pretty good Ai and can do many of the things in operator can do you want to give me a try?
-    Patient reply: I appreciate that, but I would prefer to speak with the patient support team for my appointment details.
+# Call 8 Bug Report
 
-**Improvement Suggestions**
-Lower wait time.
+Recording: `recordings/call8.mp3`
+Scenario: Ask about office hours and weekend availability, then schedule during the week.
+
+## Bug: Intro takes too long
+
+Severity: Low
+
+What happened: The intro had a long wait, and the receptionist asked twice if this was John.
+
+Why it matters: It makes the beginning feel less smooth and can make the caller unsure when to start.
+
+Fix: Keep the identity check, but avoid repeating it unless the answer was unclear.
+
+## Bug: Transfer path feels a little circular
+
+Severity: Medium
+
+What happened: The receptionist handled the transfer pretty well overall, but kept trying to support the patient after the patient had already asked for support. Since the receptionist did not have the information the patient needed, that extra step felt unnecessary.
+
+Why it matters: If the patient asks for a person because the receptionist cannot answer, the call should move forward instead of looping.
+
+Fix: Transfer once the patient asks for support in that situation.

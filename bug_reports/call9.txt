@@ -1,10 +1,24 @@
-**MP3 Observations**
-slow greeting response.
-Agent interupted my agent when introducing their name
-Successfuly corrected their phone number.
-Good timeout response. Perhaps can also say "Hello? Are you there?"
-Overall good call, agent is improving well. 
+# Call 9 Bug Report
 
-**Improvement Suggestions**
-Define agents pharmacy and address. 
-Make greeting response faster.
+Recording: `recordings/call9.mp3`
+Scenario: Request a medication refill.
+
+## Bug: Greeting is slow and introduction gets cut off
+
+Severity: Medium
+
+What happened: The greeting response was slow. The receptionist also interrupted while the patient was introducing themself. This seemed more likely when the patient said more than just their name.
+
+Why it matters: The first turn is where the patient gives identity and reason for calling. Cutting it off creates extra cleanup later.
+
+Fix: Let the patient finish the first sentence before asking the next question.
+
+## Bug: Refill scenario needs full pharmacy details
+
+Severity: Low
+
+What happened: The phone number correction and timeout response were good. The patient caller still needs a defined pharmacy and address ready for the refill test.
+
+Why it matters: A real refill call usually needs pharmacy details.
+
+Fix: Preload the refill scenario with pharmacy name, address, and phone number.

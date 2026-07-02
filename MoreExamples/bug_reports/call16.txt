@@ -1,0 +1,10 @@
+**MP3 Observations**
+Receptionist did not say thank you.
+Greeting from my bot responded at a resonable time. Response time is good.
+Receptionist audio is cutting off. May just be a bad signal?
+    On and off.
+Patient said "Sorry" at 2:05 for good reasoning. The receptionist cut off and my patient bot asked for clarification then the receptionist slowed down its speech. Perhaps we can ask other forms of clarification phrases.
+    Can you repeat that?
+    Sorry, I did not catch that?
+    etc.
+Handled transfer call well. 

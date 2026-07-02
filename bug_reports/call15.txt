@@ -1,0 +1,24 @@
+# Call 15 Bug Report
+
+Recording: `recordings/call15.mp3`
+Scenario: Ask what a new patient needs before a first visit, then schedule the earliest available appointment.
+
+## Bug: Greeting could be a little faster
+
+Severity: Low
+
+What happened: The greeting timing was okay, but it could still be faster.
+
+Why it matters: A quicker greeting would make the start feel more natural.
+
+Fix: Keep the current behavior, just reduce the leftover delay.
+
+## What worked well
+
+Severity: Informational
+
+What happened: The patient asked the question after the greeting like intended. The wait time while the receptionist was typing was good. The follow-up questions about appointment details were good. The patient also did not interrupt the end of the call.
+
+Why it matters: This is one of the cleaner calls in the final set.
+
+Keep: The timing, follow-up, and end-of-call behavior from this recording.

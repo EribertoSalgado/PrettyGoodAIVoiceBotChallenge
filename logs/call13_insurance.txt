@@ -1,0 +1,45 @@
+Running scenario: insurance
+
+    Goal: Ask whether Blue Cross Blue Shield is accepted.
+    If yes, ask to schedule a routine appointment.
+    
+127.0.0.1 - - [29/Jun/2026 14:01:47] "POST /voice HTTP/1.1" 200 -
+Receptionist said: this call may be recorded for quality and training purposes, but  Thanks for calling Pivot Point Orthopedics. Part of pretty good AI. Am I speaking with John?
+127.0.0.1 - - [29/Jun/2026 14:02:02] "POST /respond HTTP/1.1" 200 -
+Receptionist said: 
+127.0.0.1 - - [29/Jun/2026 14:02:08] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Pivot Point, Orthopaedics.  No problem. How can I help you today?
+Patient reply: Hi, I’d like to know if you accept Blue Cross Blue Shield insurance.
+127.0.0.1 - - [29/Jun/2026 14:02:20] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I can help with your insurance question. Are you John the patient?
+Patient reply: Yes, this is John Smith.
+127.0.0.1 - - [29/Jun/2026 14:02:34] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Please provide your date of birth.
+Patient reply: January 3, 1990.
+127.0.0.1 - - [29/Jun/2026 14:02:45] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The birthday doesn't match our records, but for demo purposes, I'll accept it. Let me check on Blue, Cross Blue Shield insurance for you.  Could you share your Blue Cross Blue Shield member ID? Number this will help me check if your specific plan is accepted
+Patient reply: I don't have my member ID with me right now. Can you still check if you accept Blue Cross Blue Shield?
+127.0.0.1 - - [29/Jun/2026 14:03:13] "POST /respond HTTP/1.1" 200 -
+Receptionist said: I can check General acceptance but to confirm your specific plan, I'll need your member ID. Would you like to know if we accept most Blue Cross Blue Shield plans in general, or do you want to check your exact coverage later when you have your card?
+Patient reply: I’d like to know if you accept most Blue Cross Blue Shield plans in general.
+127.0.0.1 - - [29/Jun/2026 14:03:38] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Most Blue Cross Blue, Shield plans are accepted but coverage can vary by plan and state. When you have your member ID, I can check your exact coverage. Is there anything else I can help you with
+Patient reply: Great, thank you for the information! I’d like to schedule a routine appointment.
+127.0.0.1 - - [29/Jun/2026 14:04:02] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You'd like to schedule a general office. Visit for routine. Care, is that right?
+Patient reply: Yes, that’s correct.
+127.0.0.1 - - [29/Jun/2026 14:04:20] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Do you have a preferred provider? Or would you like to see the first available?
+Patient reply: I’d like to see the first available provider, please.
+127.0.0.1 - - [29/Jun/2026 14:04:34] "POST /respond HTTP/1.1" 200 -
+Receptionist said: There are no open routine appointment slots available this week. Would you like to look for openings later next week or is there a specific date? You prefer
+Patient reply: I can do later next week. What days do you have available?
+127.0.0.1 - - [29/Jun/2026 14:04:55] "POST /respond HTTP/1.1" 200 -
+Receptionist said: The first available slot is Tuesday, July 7th, at 2 p.m. with Dr. Z big, new lucasi, would you like to book that? Or would you like to hear more options later in the week?
+Patient reply: I’ll take that appointment on Tuesday, July 7th, at 2 p.m. with Dr. Z. Thank you!
+127.0.0.1 - - [29/Jun/2026 14:05:19] "POST /respond HTTP/1.1" 200 -
+Receptionist said: Your routine appointment is set for Tuesday July 7th, at 2 p.m. with Dr. Ziggy lucoski at Pivot Point Orthopedics, please bring your photo ID, insurance card, a list of your current medications and any Imaging discs you have anything else. I can help with
+Patient reply: No, that’s everything. Thank you for your help!
+127.0.0.1 - - [29/Jun/2026 14:05:51] "POST /respond HTTP/1.1" 200 -
+Receptionist said: You're all set John, have a great day.
+127.0.0.1 - - [29/Jun/2026 14:06:03] "POST /respond HTTP/1.1" 200 -

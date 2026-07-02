@@ -1,7 +1,34 @@
-**MP3 Observations**
-Greeting wait time is long. 
-Agent interrupts me while speaking. Change my voice agent to only say my name at the greeting and ask the question later.
-Corrected receptionist medication pronounciation.
-If asked "One Moment" wait without responding. 
+# Call 10 Bug Report
 
-**Improvement Suggestions**
+Recording: `recordings/call10.mp3`
+Scenario: Request a medication refill.
+
+## Bug: Greeting delay and interruption
+
+Severity: Medium
+
+What happened: The greeting wait time was long, and the receptionist interrupted while the patient was speaking.
+
+Why it matters: Long silence followed by interruption makes the call feel unnatural.
+
+Fix: Tighten the greeting delay and wait for the patient to finish before responding.
+
+## Bug: "One moment" can trigger a timeout loop
+
+Severity: Medium
+
+What happened: When the receptionist said "one moment," the patient caller could treat the pause like it needed to respond. The medication pronunciation correction was good, but the hold behavior still needs work.
+
+Why it matters: If the receptionist is processing, the patient should wait instead of filling the silence.
+
+Fix: Treat "one moment" like a hold instruction and wait longer before saying anything.
+
+## Bug: Patient gives too much during the greeting
+
+Severity: Low
+
+What happened: The caller should only give its name during the greeting, then wait to ask the refill question.
+
+Why it matters: Giving the full refill request during identity confirmation can cause overlap or missed details.
+
+Fix: Answer the identity question first. Ask about the refill after the receptionist asks how it can help.

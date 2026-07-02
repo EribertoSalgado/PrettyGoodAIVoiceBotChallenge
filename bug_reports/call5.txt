@@ -1,7 +1,24 @@
-**MP3 Observations**
-Greeted too fast and while the receptionist was talking.
-Bot needs to stop interupting the user.
+# Call 5 Bug Report
 
-**Improvement Suggestions**
-Give a resoning for reschedule appointment.
-Stop interupting the user. 
+Recording: `recordings/call5.mp3`
+Scenario: Reschedule an orthopedic appointment for lower back pain to a morning time.
+
+## Bug: Patient caller talks too early
+
+Severity: Medium
+
+What happened: The caller greeted too fast while the receptionist was still talking. The call also had multiple interruptions.
+
+Why it matters: It makes the conversation sound rushed, and appointment details can get missed.
+
+Fix: Wait until the receptionist fully finishes before answering.
+
+## Bug: Reschedule reason could be clearer
+
+Severity: Low
+
+What happened: The patient should give a clearer reason for rescheduling. Also, when something needs to be repeated, the caller should use more natural phrases than just "sorry."
+
+Why it matters: A clear reason helps the receptionist move the call forward without extra back-and-forth.
+
+Fix: Give a short reason when asked, like needing a morning appointment, and use lines like "Could you repeat that?" or "I did not catch the time."

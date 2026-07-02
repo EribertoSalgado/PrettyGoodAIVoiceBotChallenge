@@ -1,9 +1,24 @@
-**MP3 Observations**
-Prevented speaking immediately when the call connects.
-Greeting interupted.
-Receptionist interupted my agent
-Agent interupts receptionist when given two options and responds early. 
-Interrupted receptionist while reading back information.
+# Call 6 Bug Report
 
-**Improvement Suggestions**
-Improve turn taking. 
+Recording: `recordings/call6.mp3`
+Scenario: Schedule an urgent orthopedic appointment for lower back pain, preferably in the morning.
+
+## Bug: Turn-taking still needs work
+
+Severity: Medium
+
+What happened: The caller did better by not responding to the initial recording notice. The greeting still got interrupted though. There was also overlap when the receptionist was asking questions and reading back options.
+
+Why it matters: Appointment options need to be heard clearly. If the caller jumps in early, the call feels messy even when the task still works.
+
+Fix: Wait for the full prompt or full option list before answering.
+
+## Bug: Caller should listen through readbacks
+
+Severity: Low
+
+What happened: The patient caller needs to let the receptionist finish repeating information back.
+
+Why it matters: Readbacks usually include date, time, provider, or location. Cutting in early can hide a mistake.
+
+Fix: Let confirmations finish, then correct or accept them.

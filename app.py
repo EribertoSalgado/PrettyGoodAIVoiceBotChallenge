@@ -42,7 +42,7 @@ Date of birth: January 3, 1990
 Phone: 555-123-4567
 Email: john.smith@example.com
 Insurance: Blue Cross Blue Shield
-Pharamcy: CVS Pharmacy, 123 Main Street, Anytown, USA
+Pharmacy: CVS Pharmacy, 123 Main Street, Anytown, USA
 """
 
 # Rules to keep responses short and realistic
@@ -55,6 +55,7 @@ Use one or two sentences maximum.
 Do not say you are an AI.
 Answer the exact question asked.
 Stay focused on the current scenario goal.
+If you did not understand or hear the receptionist, ask them to repeat or say it again. Vary the wording and do not always start with "sorry."
 If the receptionist offers a valid option that matches the scenario, accept it clearly.
 If the receptionist asks to confirm your name or asks if they are speaking with John, only answer:
 "Yes, this is John Smith."
@@ -75,6 +76,47 @@ Scenario:
 """
 
 
+CLARIFICATION_REPLIES = (
+    "Could you repeat that?",
+    "I did not catch that. Could you say it again?",
+    "Can you repeat that for me?",
+    "Sorry, I missed that. Could you repeat it?",
+)
+
+
+def is_identity_greeting(text):
+    """
+    Returns True when the receptionist is only confirming the caller identity.
+    This can be answered immediately without waiting for the LLM.
+    """
+    identity_phrases = (
+        "am i speaking with john",
+        "am i speaking to john",
+        "is this john",
+        "is this john smith",
+        "are you john",
+        "are you john smith",
+        "speaking with john",
+        "speaking to john",
+    )
+
+    return any(phrase in text for phrase in identity_phrases)
+
+
+def clarification_reply():
+    """
+    Rotate clarification wording so repeated empty speech events sound natural.
+    """
+    clarification_count = sum(
+        1
+        for message in conversation_history
+        if message["role"] == "assistant"
+        and message["content"] in CLARIFICATION_REPLIES
+    )
+
+    return CLARIFICATION_REPLIES[clarification_count % len(CLARIFICATION_REPLIES)]
+
+
 def fallback_reply(receptionist_message):
     """
     Returns simple rule-based responses if the OpenAI request fails.
@@ -82,8 +124,8 @@ def fallback_reply(receptionist_message):
     """
     text = receptionist_message.lower()
     
-    if "am i speaking with john" in text or "is this john" in text or "speaking with" in text:
-        return "Yes, this is John."
+    if is_identity_greeting(text):
+        return "Yes, this is John Smith."
     elif "how can i help" in text or "how can i assist" in text:
         return "I would like to schedule an appointment."
     elif "first name" in text:
@@ -177,8 +219,8 @@ def voice():
         input="speech",
         action="/respond",
         method="POST",
-        speech_timeout=2,
-        timeout=10,
+        speech_timeout=2, # Wait for 2 seconds then respond to the receptionist
+        timeout=5, # If nobody speaks for 5 seconds, continue to the response route
         language="en-US"
     )
 
@@ -197,6 +239,7 @@ def respond():
     print("Receptionist said:", receptionist_message)
 
     response = VoiceResponse()
+    fast_reply = False
 
     if receptionist_message:
         lower = receptionist_message.lower()
@@ -235,23 +278,43 @@ def respond():
             response.hangup()
             return str(response)
 
-        # Generate a patient response using OpenAI
-        reply = ask_llm(receptionist_message)
+        if is_identity_greeting(lower):
+            # Greeting confirmation is deterministic, so answer without LLM latency.
+            reply = "Yes, this is John Smith."
+            fast_reply = True
+
+            conversation_history.append(
+                {"role": "user", "content": receptionist_message}
+            )
+            conversation_history.append(
+                {"role": "assistant", "content": reply}
+            )
+
+            print("Patient reply:", reply)
+        else:
+            # Generate a patient response using OpenAI
+            reply = ask_llm(receptionist_message)
 
     else:
         # First message if the receptionist stays silent
         if request.args.get("initial") == "1":
             reply = "Hello, I am calling about an appointment."
+            fast_reply = True
 
             conversation_history.append(
                 {"role": "assistant", "content": reply}
             )
         else:
             # Ask the receptionist to repeat if nothing was heard
-            reply = "Sorry, I did not catch that. Could you repeat it?"
+            reply = clarification_reply()
 
-    # Small pause to sound more natural
-    response.pause(length=1)
+            conversation_history.append(
+                {"role": "assistant", "content": reply}
+            )
+
+    # Small pause to sound more natural, except for latency-sensitive greetings.
+    if not fast_reply:
+        response.pause(length=1)
 
     # Listen for the receptionist's next response
     gather = Gather(

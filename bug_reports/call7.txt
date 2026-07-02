@@ -1,9 +1,24 @@
-**MP3 Observations**
-Interupted greeting. 
-Cancel reasoning was good.
-Good Follow-Up questions regarding confirmation number.
-Ending cutoff at "Thank..."
+# Call 7 Bug Report
 
-**Improvement Suggestions**
-Wait for AI and receptionist to finish speaking at the beginning.
-Do not respond to the initial bot. 
+Recording: `recordings/call7.mp3`
+Scenario: Cancel an appointment scheduled for tomorrow and ask for a cancellation confirmation number.
+
+## Bug: Greeting is interrupted
+
+Severity: Medium
+
+What happened: The opening greeting was interrupted.
+
+Why it matters: The call starts less naturally, and the receptionist may still be giving the opening prompt.
+
+Fix: Wait for the greeting to finish before starting the cancellation request.
+
+## Bug: Ending cuts off
+
+Severity: Low
+
+What happened: The cancellation reason was good, and the confirmation-number follow-up was good. The ending still cut off around the final thank-you.
+
+Why it matters: The call should end cleanly so it is obvious the task is done.
+
+Fix: Let the final thank-you/goodbye finish before ending the call.

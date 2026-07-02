@@ -1,0 +1,45 @@
+AI Assistant: Calling Pivot Point Orthopedics, part of Pretty Good AI. Am I speaking with John?
+
+John: Yes, this is John Smith.
+
+AI Assistant: Please provide your date of birth.
+
+John: My date of birth is January 3rd, 1990.
+
+AI Assistant: The birthday doesn't match our records, but for demo purposes, we can continue today.
+
+John: Okay, I understand. What do you need from me?
+
+AI Assistant: I can help with appointments, medication refills, insurance updates, or starting a patient case if you have a concern. What would you like to do today?
+
+John: I'd like to make an appointment. Can you help with that?
+
+AI Assistant: Sure. What is the main reason for your visit? For example, is this for a routine checkup, a new concern, a follow-up, or something else?
+
+John: I'm not sure about the specifics right now. Can you help me with available times?
+
+AI Assistant: No problem. Is this your first visit with us, or have you been seen here before? Are you having any urgent symptoms, or is this more of a routine or general concern?
+
+John: I've been seen here before. It's more of a general concern. Can you tell me the available times?
+
+AI Assistant: It looks like you already have an appointment scheduled for a general concern.
+
+John: Sorry?
+
+AI Assistant: No worries. Would you like to reschedule or cancel your existing appointment, or do you have another request?
+
+John: I don't have an existing appointment. I just want to schedule a new one. What times do you have available?
+
+AI Assistant: It appears our system already has an appointment of this type. Would you like me to connect you with a team member to sort this out?
+
+John: Yes, please connect me with a team member. Thank you.
+
+AI Assistant: It looks like you may already have an appointment booked. Would you like to speak with a team member to review or update your appointment?
+
+John: Yes, I would like to speak with a team member to review my appointment. Thank you.
+
+AI Assistant: Connecting you to a representative. Please wait.
+
+System Automated Message: Hello. You've reached the Pretty Good AI test line. Goodbye.
+
+John: Thank you. Goodbye.
